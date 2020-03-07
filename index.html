@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/cerulean/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LV/SIoc08vbV9CCeAwiz7RJZMI5YntsH8rGov0Y2nysmepqMWVvJqds6y0RaxIXT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>米修在线热门课程星级评价</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="form-group">
+        <select id="produce-select" class="form-control custom-select">
+          <option value="0" disabled selected>选择产品</option>
+          <option value="vue">Vue小白入门教程</option>
+          <option value="node">Node框架Koa从入门到实战</option>
+          <option value="jquery">前端jQuery系列课程</option>
+          <option value="djingo">Djingo小白入门到实战课程</option>
+          <option value="flutter">Flutter小白入门到实战全新教程</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <input
+          type="number"
+          id="rating-control"
+          class="form-control"
+          step="0.1"
+          max="5"
+          placeholder="评分0-5"
+          disabled
+        />
+      </div>
+      <table class="table table-striped">
+        <thead>
+          <th>米修在线热门课程</th>
+          <th>评分</th>
+        </thead>
+        <tbody>
+          <tr class="vue">
+            <td>Vue小白入门教程</td>
+            <td>
+              <div class="stars-outer">
+                <div class="stars-inner"></div>
+              </div>
+              <span class="number-rating"></span>
+            </td>
+          </tr>
+          <tr class="node">
+            <td>Node框架Koa从入门到实战</td>
+            <td>
+              <div class="stars-outer">
+                <div class="stars-inner"></div>
+              </div>
+              <span class="number-rating"></span>
+            </td>
+          </tr>
+          <tr class="jquery">
+            <td>前端jQuery系列课程</td>
+            <td>
+              <div class="stars-outer">
+                <div class="stars-inner"></div>
+              </div>
+              <span class="number-rating"></span>
+            </td>
+          </tr>
+          <tr class="djingo">
+            <td>Djingo小白入门到实战课程</td>
+            <td>
+              <div class="stars-outer">
+                <div class="stars-inner"></div>
+              </div>
+              <span class="number-rating"></span>
+            </td>
+          </tr>
+          <tr class="flutter">
+            <td>Flutter小白入门到实战全新教程</td>
+            <td>
+              <div class="stars-outer">
+                <div class="stars-inner"></div>
+              </div>
+              <span class="number-rating"></span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
